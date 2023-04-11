@@ -1,0 +1,12 @@
+import pandas as pd
+from ydata_profiling import ProfileReport
+import numpy as np
+import matplotlib.pylab as plt
+import seaborn as sns
+!pip install ydata-profiling
+df=pd.read_csv(r"C:\Users\Dell\Desktop\IPBA\BYOP\IBM HR-Employee-Attrition.csv")
+import pandas as pd
+from ydata_profiling import ProfileReport
+profile = ProfileReport(df, title="Project Report")
+profile
+profile.to_file("your_report.html")
